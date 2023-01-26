@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -11,10 +11,11 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(255, 255, 255);
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  width: 100%;
 }
 
 li {
@@ -23,44 +24,137 @@ li {
 
 li a {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+  margin-top: 14px;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 10px 15px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: rgb(191, 191, 191);
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #ffffff;
+}
+.coba{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight:bold;
+    font-size: 23px;
+}
+.inti{
+  font-size:24pt;
+    padding-bottom:1em;
+    width:50%;
+    float: left;
+    height:80%;
+}
+.imagee{
+  margin-top: 5%;
+}
+.foto{
+  width: 120%;
+  float: left;
+}
+.desc{
+  font-size:60pt;
+  display:inline-block;
+  width:50%;
+  padding-top:10%;
+  color: #c3323a;
+  height:80%;
+  vertical-align:bottom;;
+  font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+    line-height: 1;
+}
+.satu{
+  animation: text-shadow 1.5s ease-in-out infinite;
+}
+.desc2{
+  font-size: 15pt;
+  padding-top: 5px;
+  font-weight:lighter;
+  font-style:oblique;
+  margin-left: 30px;
+  font-family: 'EB Garamond', serif;
+  color: black;
+}
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    20% {  
+        transform: translateY(-1em);
+        text-shadow: 
+            0 0.125em 0 #0c2ffb, 
+            0 0.25em 0 #2cfcfd, 
+            0 -0.125em 0 #fb203b, 
+            0 -0.25em 0 #fefc4b;
+    }
+
+    40% {  
+        transform: translateY(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 #0c2ffb, 
+            0 -0.125em 0 #2cfcfd, 
+            0 0.0625em 0 #fb203b, 
+            0 0.125em 0 #fefc4b;
+    }
+    
+   60% {
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 #0c2ffb, 
+            0 0.0625em 0 #2cfcfd, 
+            0 -0.03125em 0 #fb203b, 
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
 }
 </style>
 </head>
 <body>
-
-<div class="header">
-  <h2>Scroll Down</h2>
-  <p>Scroll down to see the sticky effect.</p>
-</div>
-
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a class="active" href="logo.png">
+    <img src="logo.png" alt="Logo BPS" width="80" height="60">
+  </a></li>
+  <li><a class="coba" href="#news">Badan Pusat Statistik <br/> Kota Bengkulu</a> </li>
+  <li><a class="ham-menu"></a></li>
 </ul>
-
-<h3>Sticky Navigation Bar Example</h3>
-<p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
-<p><strong>Note:</strong> Internet Explorer do not support sticky positioning and Safari requires a -webkit- prefix.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-
+<div class="inti">
+  <div class="imagee">
+    <a href="foto.jpg">
+  <img class="foto" src="foto.jpg">
+  </a>
+  </div>
+</div>
+<div  class="desc">
+  <span class="satu"> Hello </br> <span style="margin-left: 2em"></span> There!</span>
+  <p class="desc2"> Apa yang ingin kamu lihat hari ini?</p>
+  </div>
 </body>
 </html>
