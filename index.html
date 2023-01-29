@@ -88,8 +88,8 @@ li a:hover {
   margin-top: 5%;
 }
 .img-fluid{
-  margin-top: 5%;
-  width: 60%;
+  margin-top: 15%;
+  width: 100%;
   float: left;
 }
 .container-fluid .img-fluid{
@@ -118,13 +118,20 @@ li a:hover {
   color: black;
 }
 .row{
-  margin-top: 350px;
   align-items: center;
   text-align: center;
   font-size: 15pt;
 }
 .subtitle{
   font-size: 30pt;
+}
+.welcome{
+  align-items: left;
+  text-align: left;
+  font-size: 50pt;
+  font-family: 'Montserrat', sans-serif;
+  color: #c3323a;
+  font-weight: bold;
 }
 @media (prefers-reduced-motion: reduce) {
     * {
@@ -150,14 +157,16 @@ li a:hover {
       </div>
     </div>
   </nav>
-<div class="inti">
-  <div class="imagee">
-    <a href="foto.jpg">
-  <img class="img-fluid" id="logo" src="foto.jpg">
-  </a>
-  </div>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="imgAbt">
+            <img class="img-fluid" src="foto.jpg" />
+        </div>
+    </div>
+    <div class="col-md-5">
+        <p class="welcome"> SELAMAT DATANG</p>
+    </div>
 </div>
-  </div>
 <div class="row">
   <div class="col p-3 bg-white text-danger"><img src="logo.png" width="200" height="200"> <p class="subtitle"> Surat Masuk </p><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusm`od tempor.</div>
   <div class="col p-3 bg-white text-danger"><img src="logo.png" width="200" height="200"> <p class="subtitle"> Surat Kontrak </p><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusm`od tempor.</div>
