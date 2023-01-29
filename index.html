@@ -49,7 +49,7 @@ li a:hover {
     font-weight:bold;
     color: black;
     font-size: 20px;
-    margin-left: 1%;
+    margin-left: 2%;
     margin-top: 0px;
 }
 .nav-itemm{
@@ -93,6 +93,10 @@ li a:hover {
   width: 60%;
   float: left;
 }
+.container-fluid .img-fluid{
+  width: 7%;
+  margin-top: 1%;
+}
 .desc{
   font-size:60pt;
   display:inline-block;
@@ -134,7 +138,7 @@ li a:hover {
 <body>
   <nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-white">
     <div class="container-fluid">
-      <img src="logo.png" alt="Logo BPS" width="80" height="60">
+      <img class="img-fluid" src="logo.png" alt="Logo BPS">
       <a class="bps">Badan Pusat Statistik <br/> Kota Bengkulu</a> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -151,7 +155,7 @@ li a:hover {
 <div class="inti">
   <div class="imagee">
     <a href="foto.jpg">
-  <img class="img-fluid" src="foto.jpg">
+  <img class="img-fluid" id="logo" src="foto.jpg">
   </a>
   </div>
 </div>
