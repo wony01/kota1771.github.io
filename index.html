@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <style>
 body {
   font-size: 28px;
@@ -24,7 +29,7 @@ li {
 
 li a {
   display: block;
-  margin-top: 14px;
+  margin-top: 5px;
   color: rgb(0, 0, 0);
   text-align: left;
   padding: 10px 15px;
@@ -38,17 +43,39 @@ li a:hover {
 .active {
   background-color: #ffffff;
 }
-.coba{
+.nav-item{
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     font-weight:bold;
     font-size: 20px;
+    margin-left: 1%;
+    margin-top: 0px;
+}
+.nav-itemm{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    margin-left: 66%;
+    margin-top: 10px;
+}
+.container-fluid{
+  margin-left: 10px;
+  margin-top: 0px;
+}
+#navbarDropdown{
+  margin-left:10%;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  color: black;
+  margin-top: 15px;
+  font-size: 20px;
 }
 .home{
     font-family: 'Montserrat', sans-serif;
     font-weight:bold;
     font-size: 18px;
-    margin-left: 50px;
+    margin-left: 600px;
+    margin-top: 15px;
 }
 .inti{
   font-size:24pt;
@@ -68,7 +95,7 @@ li a:hover {
   font-size:60pt;
   display:inline-block;
   width:50%;
-  padding-top:10%;
+  padding-top:22%;
   color: #c3323a;
   height:80%;
   vertical-align:bottom;;
@@ -76,65 +103,24 @@ li a:hover {
     font-weight: 900;
     line-height: 1;
 }
-.satu{
-  animation: text-shadow 1.5s ease-in-out infinite;
-}
 .desc2{
   font-size: 15pt;
   padding-top: 5px;
   font-weight:lighter;
-  font-style:oblique;
+  font-style: normal;
   margin-left: 30px;
   font-family: 'EB Garamond', serif;
   color: black;
 }
-@keyframes text-shadow {
-    0% {  
-        transform: translateY(0);
-        text-shadow: 
-            0 0 0 #0c2ffb, 
-            0 0 0 #2cfcfd, 
-            0 0 0 #fb203b, 
-            0 0 0 #fefc4b;
-    }
-
-    20% {  
-        transform: translateY(-1em);
-        text-shadow: 
-            0 0.125em 0 #0c2ffb, 
-            0 0.25em 0 #2cfcfd, 
-            0 -0.125em 0 #fb203b, 
-            0 -0.25em 0 #fefc4b;
-    }
-
-    40% {  
-        transform: translateY(0.5em);
-        text-shadow: 
-            0 -0.0625em 0 #0c2ffb, 
-            0 -0.125em 0 #2cfcfd, 
-            0 0.0625em 0 #fb203b, 
-            0 0.125em 0 #fefc4b;
-    }
-    
-   60% {
-        transform: translateY(-0.25em);
-        text-shadow: 
-            0 0.03125em 0 #0c2ffb, 
-            0 0.0625em 0 #2cfcfd, 
-            0 -0.03125em 0 #fb203b, 
-            0 -0.0625em 0 #fefc4b;
-    }
-
-    80% {  
-        transform: translateY(0);
-        text-shadow: 
-            0 0 0 #0c2ffb, 
-            0 0 0 #2cfcfd, 
-            0 0 0 #fb203b, 
-            0 0 0 #fefc4b;
-    }
+.row{
+  margin-top: 350px;
+  align-items: center;
+  text-align: center;
+  font-size: 15pt;
 }
-
+.subtitle{
+  font-size: 30pt;
+}
 @media (prefers-reduced-motion: reduce) {
     * {
       animation: none !important;
@@ -144,13 +130,24 @@ li a:hover {
 </style>
 </head>
 <body>
-<ul>
-  <li><a class="active" href="logo.png">
-    <img src="logo.png" alt="Logo BPS" width="80" height="60">
-  </a></li>
-  <li><a class="coba" href="/surat_masuk.html">Badan Pusat Statistik <br/> Kota Bengkulu</a> </li>
-  <li><a class="home" href="#home"> Home</a></li>
-</ul>
+  <nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-white">
+    <div class="container-fluid">
+      <img src="logo.png" alt="Logo BPS" width="80" height="60">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Badan Pusat Statistik <br/> Kota Bengkulu</a>
+          </li>
+          <li class="nav-itemm ms-auto p-2 bd-highlight">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 <div class="inti">
   <div class="imagee">
     <a href="foto.jpg">
@@ -159,8 +156,14 @@ li a:hover {
   </div>
 </div>
 <div  class="desc">
-  <span class="satu"> Hello </br> <span style="margin-left: 2em"></span> There!</span>
-  <p class="desc2"> Apa yang ingin kamu lihat hari ini???</p>
+  <span class="satu"> Selamat </br> <span style="margin-left: 2em"></span> Datang!</span>
+  <p class="desc2"> di halaman Administrasi BPS Kota Bengkulu!</p>
   </div>
+</div>
+<div class="row">
+  <div class="col p-3 bg-white text-danger"><img src="logo.png" width="200" height="200"> <p class="subtitle"> Surat Masuk </p><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusm`od tempor.</div>
+  <div class="col p-3 bg-white text-danger"><img src="logo.png" width="200" height="200"> <p class="subtitle"> Surat Kontrak </p><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusm`od tempor.</div>
+  <div class="col p-3 bg-white text-danger"><img src="logo.png" width="200" height="200"> <p class="subtitle"> Susunan Tim Kerja </p><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusm`od tempor.</div>
+</div>
 </body>
 </html>
