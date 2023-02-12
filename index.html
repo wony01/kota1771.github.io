@@ -9,6 +9,7 @@
 <style>
 body {
   font-size: 28px;
+  background: #f0f3fc;
 }
 
 ul {
@@ -24,7 +25,7 @@ ul {
 }
 
 li {
-  float: left;
+  float: right;
 }
 
 li a {
@@ -43,24 +44,17 @@ li a:hover {
 .active {
   background-color: #ffffff;
 }
-.bps{
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-    font-weight:bold;
-    color: black;
-    font-size: 75%;
-    margin-left: 2%;
-    margin-top: 0px;
-}
 .nav-itemm{
     font-family: 'Montserrat', sans-serif;
     font-weight:bold;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 0;
 }
 .container-fluid{
   margin-left: 10px;
-  margin-top: 0px;
+  margin-top: 0;
+  height: 1%;
+  background: #f0f3fc;
 }
 #navbarDropdown{
   margin-left:10%;
@@ -75,7 +69,7 @@ li a:hover {
     font-weight:bold;
     font-size: 18px;
     margin-left: 600px;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 .inti{
     font-size:24pt;
@@ -84,54 +78,21 @@ li a:hover {
     float: left;
     height:80%;
 }
-.imagee{
-  margin-top: 5%;
-}
-.img-fluid{
-  margin-top: 15%;
-  width: 100%;
-  float: left;
-}
-.container-fluid .img-fluid{
-  width: 50%;
-  margin-top: 0%;
-}
-.desc{
-  font-size:60pt;
-  display:inline-block;
-  width:1%;
-  padding-top:22%;
-  color: #c3323a;
-  height:80%;
-  vertical-align:bottom;;
-  font-family: 'Roboto Mono', monospace;
-    font-weight: 900;
-    line-height: 1;
-}
-.desc2{
-  font-size: 15pt;
-  padding-top: 5px;
-  font-weight:lighter;
-  font-style: normal;
-  margin-left: 30px;
-  font-family: 'EB Garamond', serif;
-  color: black;
-}
 .row{
   align-items: center;
   text-align: center;
   font-size: 15pt;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
 }
-.subtitle{
-  font-size: 30pt;
-}
-.welcome{
-  align-items: left;
-  text-align: left;
-  font-size: 50pt;
-  font-family: 'Montserrat', sans-serif;
-  color: #c3323a;
-  font-weight: bold;
+#row2{
+  align-items: center;
+  text-align: center;
+  font-size: 15pt;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
 }
 @media (prefers-reduced-motion: reduce) {
     * {
@@ -139,12 +100,83 @@ li a:hover {
       transition: none !important;
     }
 }
+.navbar-brand{
+  font-family: 'Montserrat', sans-serif;
+  color: #383b44;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 90%;
+  margin-top: 0;
+}
+h1{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: light;
+  color: #2c365a;
+  position: relative;
+  z-index:50;
+}
+h2{
+  margin-top: 15%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #2c365a;
+  position: relative;
+  z-index: 1;
+}
+.col {
+  margin-left: 3%;
+ background: #c0e5ee;
+  place-content: center;
+  place-items: center;
+  border-radius: 10px;
+}
+.bg{
+  background: url(bg.jpg);
+  width: 100%;
+  height: 1300px;
+}
+.navbar{
+  background: #f0f3fc;
+}
+.navbar-nav{
+  background: #f0f3fc;
+}
+.nav-link{
+  background: #f0f3fc;
+  color: #383b44;
+}
+.subtitle{
+  margin-top: 5%;
+  font-size: 150%;
+  color: #ee786c;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: bold;
+}
+.subtitle1{
+  margin-top: 5%;
+  font-size: 130%;
+  color: #ee786c;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: bold;
+}
+.foto{
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
 </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-white">
+  <nav class="navbar navbar-expand-lg navbar fixed-top navbar-light">
     <div class="container-fluid">
-      <img class="img-fluid" href ="#" src="logoo.png" alt="Logo BPS">
+      <a class="navbar-brand" href ="#">
+        <img src="logo.png" alt="" width="65" height="47" class="d-inline-block align-text-top">
+       &ensp;BPS Kota Bengkulu
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -157,20 +189,23 @@ li a:hover {
       </div>
     </div>
   </nav>
-  <div class="row">
-    <div class="col-md-7">
-      <div class="imgAbt">
-            <img class="img-fluid" src="foto.jpg" />
-        </div>
-    </div>
-    <div class="col-md-5">
-        <p class="welcome"> SELAMAT DATANG</p>
-    </div>
-</div>
+  <div class="bg">
+    <h1 class="judul">
+      Selamat datang!
+    </h1>
+    <h2 class="subjudul">
+      Selamat Datang di </br> di Halaman Administrasi BPS Kota Bengkulu
+    </h2>
+  </div>
 <div class="row">
-  <div class="col p-3 bg-white text-danger"><img src="logo.png" width="200" height="200"> <p class="subtitle"> Surat Masuk </p><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusm`od tempor.</div>
-  <div class="col p-3 bg-white text-danger"><img src="logo.png" width="200" height="200"> <p class="subtitle"> Surat Kontrak </p><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusm`od tempor.</div>
-  <div class="col p-3 bg-white text-danger"><img src="logo.png" width="200" height="200"> <p class="subtitle"> Susunan Tim Kerja </p><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusm`od tempor.</div>
+  <div class="col p-3 text-danger"><img src="agenda.png" width="170" height="170"> <p class="subtitle"> Agenda Surat </p> </div>
+  <div class="col p-3 text-danger"><img src="kontrak.png" width="170" height="170"> <p class="subtitle"> Surat Kontrak </p> </div>
+  <div class="col p-3 text-danger"><img src="tim kerja.png" width="170" height="170"> <p class="subtitle"> Tim Kerja </p></div>
+</div>
+<div class="row" id="row2">
+  <div class="col p-3 text-danger"><img src="admin.png" width="180" height="170"> <p class="subtitle1"> Administrasi Umum </p></div>
+  <div class="col p-3 text-danger"><img src="surat tugas.png" width="180" height="170"> <p class="subtitle"> Surat Tugas </p></div>
+  <div class="col p-3 text-danger"><img src="tim kerja.jpg" width="200" height="170"> <p class="subtitle"> Tim Kerja </p></div>
 </div>
 </body>
 </html>
