@@ -39,12 +39,21 @@
   .navbar-brand{
     font-style: italic;
     font-family: 'Montserrat', sans-serif;
-    color: #3d4748;
+    color: #383b44;
     font-weight: bolder;
+  }
+  .navbar{
+    background-color: #8d93ab;
   }
   .navbar-brand img{
     width: 15%;
     margin-left: 0%;
+  }
+  footer{
+    background-color: #8d93ab;
+  }
+  main{
+    background-color: #f2f3f8;
   }
   .subjudul{
   margin-top: 3%;
@@ -76,7 +85,7 @@
   margin-top: 5%;
 }
 h6{
-  color: #13909b;
+  color: #383b44;
   font-size: larger;
 }
 .nav-link span{
@@ -88,16 +97,40 @@ h6{
 }
 .dropdown{
   font-size: medium; 
+  color: #383b44;
+  font-weight: bold;
 }
 main{
   max-height: max-content;
+}
+.fs-5{
+  color:#f2f3f8;
+}
+.nav .nav-item .nav-link:active,
+.nav .nav-item .nav-link:focus,
+.nav .nav-item:hover .nav-link {
+    color: #8d93ab;
+}
+.nav .nav-item .nav-link.active{
+  background-color: #383b44;
+}
+.nav-link{
+  color: #383b44;
+  font-size: large;
+}
+header .offcanvas{
+  background-color: #f2f3f8;
+}
+.mb-1{
+  color: #383b44;
+  font-weight: bold;
 }
     </style>
   </head>
   <body>
     
 <header>
-  <div id= "offcanvas" class="offcanvas offcanvas-end d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 360px;">
+  <div id= "offcanvas" class="offcanvas offcanvas-end d-flex flex-column flex-shrink-0 p-3" style="width: 360px;">
     <div class="offcanvas-header">
         <h6 href="#"  class="offcanvas-title d-none d-sm-block" id="offcanvas">Menu</h6>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
@@ -106,32 +139,31 @@ main{
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
         <a href="#" class="nav-link active" aria-current="page">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-          Home
+          <i class="fs-5 bi-house"></i> Home
         </a>
       </li>
-      <li>
-        <a href="#" class="nav-link link-dark">
+      <li class="nav-item">
+        <a href="#" class="nav-link">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-          Dashboard
+          Monitoring Surat
         </a>
       </li>
       <li>
         <a href="#" class="nav-link link-dark">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-          Orders
+          Arsip Dokumen
         </a>
       </li>
       <li>
         <a href="#" class="nav-link link-dark">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-          Products
+          Tim Kerja
         </a>
       </li>
       <li>
         <a href="#" class="nav-link link-dark">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-          Customers
+          Pedoman Administrasi Keuangan
         </a>
       </li>
     </ul>
@@ -152,7 +184,7 @@ main{
   </div>
 </header>
 <main>
-<div class="album py-5 bg-light">
+<div class="album py-5">
   <div class="bg">
     <p class="subjudul">
       Selamat Datang di </br> </br>di Halaman Administrasi BPS Kota Bengkulu
