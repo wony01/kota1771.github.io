@@ -35,6 +35,9 @@
     .navbar-brand img{
       width:8%;
     }
+    #welcome{
+      align-items: center;
+    }
   }
   .navbar-brand{
     font-style: italic;
@@ -65,7 +68,7 @@
   align-items: center;
   z-index: 1;
 }
-.row{
+#row3{
   align-items: center;
   text-align: center;
   font-size: 15pt;
@@ -117,6 +120,13 @@ header .offcanvas{
 }
 .mb-1{
   color: #383b44;
+}
+h1{
+  color: #383b44;
+}
+.lead{
+  color: #8d93ab;
+  font-weight: 400;
 }
     </style>
   </head>
@@ -178,12 +188,18 @@ header .offcanvas{
 </header>
 <main>
 <div class="album py-5">
-  <div class="bg">
-    <p class="subjudul">
-      Selamat Datanng di </br> </br>di Halaman Administrasi BPS Kota Bengkulu
-    </p>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center py-6" id="halo">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img id="welcome" src="background1.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500px" height="700" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3 ">Selamat Datang</h1>
+        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      </div>
+    </div>
   </div>
-    <div class="row">
+    <div class="row" id="row3">
       <div class="col p-3 text-danger"><img src="agenda.png" width="170" height="170"> <p class="subtitle"> Agenda Surat </p> </div>
       <div class="col p-3 text-danger"><img src="kontrak.png" width="170" height="170"> <p class="subtitle"> Surat Kontrak </p> </div>
       <div class="col p-3 text-danger"><img src="tim kerja.png" width="170" height="170"> <p class="subtitle"> Tim Kerja </p></div>
