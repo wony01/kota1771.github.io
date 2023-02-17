@@ -38,6 +38,9 @@
     #welcome{
       align-items: center;
     }
+    .single_service{
+      margin-top: 2%;
+    }
   }
   .navbar-brand{
     font-style: italic;
@@ -56,7 +59,7 @@
     background-color: #ffffff;
   }
   main{
-    background-color: #f2f3f8;
+    background-color: #ffffff;
   }
   .subjudul{
   margin-top: 3%;
@@ -128,6 +131,26 @@ h1{
   color: #8d93ab;
   font-weight: 400;
 }
+#sosmed{
+  color: #383b44;
+}
+.credit{
+  font-size: small;
+  color: #383b44;
+}
+.single_service{
+  padding: 35px 30px 35px 30px;
+  border-radius: 5px;
+  border: 2px solid #383b44;
+}
+.single_service p{
+  font-size: smaller; 
+}
+#tombol{
+  justify-content: center;
+  vertical-align: middle;
+  padding : 0.5rem 0rem;
+}
     </style>
   </head>
   <body>
@@ -147,8 +170,10 @@ h1{
       </li>
       <li class="nav-item">
         <a href="#" class="nav-link">
-          <i class="fs-5 bi-envelope-paper"></i>
-          Monitoring Surat
+            <button id="tombol" class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+              <i class="fs-5 bi-envelope-paper"></i>
+              &ensp;Monitoring Surat
+            </button>
         </a>
       </li>
       <li class="nav-item">
@@ -191,32 +216,53 @@ h1{
   <div class="container col-xxl-8 px-5 py-5">
     <div class="row flex-lg-row-reverse align-items-center py-6" id="halo">
       <div class="col-10 col-sm-8 col-lg-6">
-        <img id="welcome" src="background1.png" class="d-block mx-lg-auto img-fluid d-none d-lg-block" alt="Bootstrap Themes" width="500px" height="700" loading="lazy">
+        <a class="credit d-none d-lg-block" href="http://www.freepik.com"> <img href="http://www.freepik.com" id="welcome" src="background1.png" class="d-block mx-lg-auto img-fluid d-none d-lg-block" alt="Bootstrap Themes" width="500px" height="700" loading="lazy">Designed by upklyak / Freepik</a>
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3 ">Selamat Datang</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <h1 class="display-5 fw-bold lh-1 mb-3 ">Selamat Datang di Laman Administrasi BPS Kota Bengkulu</h1>
+        <p class="lead">Laman ini bertujuan untuk memudahkan pegawai dalam mengakses file administrasi yang dibutuhkan. </p>
       </div>
     </div>
   </div>
-    <div class="row" id="row3">
-      <div class="col p-3 text-danger"><img src="agenda.png" width="170" height="170"> <p class="subtitle"> Agenda Surat </p> </div>
-      <div class="col p-3 text-danger"><img src="kontrak.png" width="170" height="170"> <p class="subtitle"> Surat Kontrak </p> </div>
-      <div class="col p-3 text-danger"><img src="tim kerja.png" width="170" height="170"> <p class="subtitle"> Tim Kerja </p></div>
+  <div class="row" id="row3">
+    <div class="col-xl-4 col-md-4 ">
+      <div class="single_service text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+        <div class="icon">
+          <img src="Asset 5.png" width="200px" alt="">
+        </div>
+        <h3>Web design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+      </div>
     </div>
-    <div class="row" id="row2">
-      <div class="col p-3 text-danger"><img src="admin.png" width="180" height="170"> <p class="subtitle1"> Administrasi Umum </p></div>
-      <div class="col p-3 text-danger"><img src="surat tugas.png" width="180" height="170"> <p class="subtitle"> Surat Tugas </p></div>
-      <div class="col p-3 text-danger"><img src="tim kerja.png" width="200" height="170"> <p class="subtitle"> Tim Kerja </p></div>
+    <div class="col-xl-4 col-md-4 ">
+      <div class="single_service text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+        <div class="icon">
+          <img src="Asset 5.png" width="200px" alt="">
+        </div>
+        <h3>Web design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-4">
+    <div class="single_service text-center wow fadeInRight" data-wow-duration="1.2s" data-wow-delay=".4s">
+    <div class="icon">
+      <img src="Asset 5.png" width="200px" alt="">
+    </div>
+    <h3>Mobile app</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
   </div>
 </main>
 <footer class="text-muted py-3 bg-light">
   <div class="container">
       <ul class="list-group list-unstyled list-group-horizontal float-end mb-1">
-        <li> <a href="https://www.facebook.com/bps.kota"><img src="facebook.png" width="30" > </a></li>
+        <li> <a href="https://www.facebook.com/bps.kota"><i class="fs-5 bi-facebook" id="sosmed" width="50"> </i></a></li>
         &ensp;
-        <li><a href="https://www.instagram.com/bps_kotabengkulu/"><img src="instagram.png" width="30"></a></li>
+        <li><a href="https://www.instagram.com/bps_kotabengkulu/"><i class="fs-5 bi-instagram" id="sosmed" width="50"> </i></a></li>
       </ul>
     <p class="mb-1">&copy; Badan Pusat Statistik Kota Bengkulu</p>
     <p class="mb-1"> Made with &hearts; by Subbag Umum</p>
