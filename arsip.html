@@ -219,6 +219,13 @@ h1{
   color: #8d93ab;
   font-weight: 500;
 }
+.btn-toggle-nav a {
+    display: inline-flex;
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+    text-decoration: none;
+}
 .btn-toggle-nav a:hover, .btn-toggle-nav a:focus {
     background-color: #8d93ab;
 }
@@ -235,7 +242,7 @@ h1{
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">
+        <a href="index.html" class="nav-link">
           <i class="fs-5 bi-house"></i> Home
         </a>
       </li>
@@ -255,7 +262,7 @@ h1{
               </div>
       </li>
       <li class="nav-item">
-        <a href="arsip.html" class="nav-link">
+        <a href="arsip.html" class="nav-link active" aria-current="page">
           <i class="fs-5 bi-file-earmark-text"></i>
           Arsip Dokumen
         </a>
@@ -280,7 +287,7 @@ h1{
   </div>
   <div class="navbar navbar fixed-top navbar-white bg-light shadow-sm">
     <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
         <img src="logo.png">
         &ensp; BPS Kota Bengkulu</a>
       <button class="navbar-toggler ms" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-expanded="false" aria-label="Toggle navigation">
@@ -290,39 +297,38 @@ h1{
   </div>
 </header>
 <main>
- 
-<div class="album py-5">
-  <div class="container col-xxl-8 px-5 py-5">
-    <div class="row flex-lg-row-reverse align-items-center py-6" id="halo">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <a class="credit d-none d-lg-block" href="http://www.freepik.com"> <img href="http://www.freepik.com" id="welcome" src="background1.png" class="d-block mx-lg-auto img-fluid d-none d-lg-block" alt="Bootstrap Themes" width="500px" height="700" loading="lazy">Designed by upklyak / Freepik</a>
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3 ">Selamat Datang di Laman Administrasi BPS Kota Bengkulu 2023</h1>
-        <p class="lead">Laman ini bertujuan untuk memudahkan pegawai dalam mengakses file administrasi yang dibutuhkan. </p>
-      </div>
-    </div>
-  </div>
+    <div class="album py-5">
+        <div class="container col-xxl-8 px-5 py-5">
+          <div class="row flex-lg-row-reverse align-items-center py-6" id="halo">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <a class="credit d-none d-lg-block" href="http://www.freepik.com"> <img href="http://www.freepik.com" id="welcome" src="bg arsip.png" class="d-block mx-lg-auto img-fluid d-none d-lg-block" alt="Bootstrap Themes" width="450px" height="500" loading="lazy">Designed by stories / Freepik</a>
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3 ">Arsip Dokumen</h1>
+              <p class="lead">Berisi arsip-arsip dokumen administrasi yang mungkin saja diperlukan oleh pegawai </p>
+            </div>
+          </div>
+        </div>
   <div class="row" id="row3">
     <div class="col-lg-4 col-md-6 col-sm-6">
     <div class="single-cat text-center mb-50">
     <div class="cat-icon">
-    <img src="surat tugas.png"width="70px" alt="">
+    <img src="sk.png"width="60px" alt="">
     </div>
     <div class="cat-cap">
-    <h5><a class="subjud" href="https://docs.google.com/spreadsheets/d/1Ff8h17xr5RKyrthF4dW5hbba2UwxPX_I/edit?usp=share_link&ouid=102423170626060549487&rtpof=true&sd=true">Surat Tugas</a></h5>
-    <p>Berisi monitoring surat tugas BPS Kota Bengkulu tahun 2023</p>
+    <h5><a class="subjud" href="https://laci.bps.go.id/s/lEAa4DAarxj4byn ">SK Kepala</a></h5>
+    <p>Berisi arsip Surat Keputusan Kepala BPS Kota Bengkulu tahun 2023</p>
     </div>
     </div>
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6">
     <div class="single-cat text-center mb-50">
     <div class="cat-icon">
-    <img src="kontrak.png"width="70px" alt="">
+    <img src="Arsip.png"width="70px" alt="">
     </div>
     <div class="cat-cap">
-    <h5><a class="subjud" href="https://docs.google.com/spreadsheets/d/1huawNYUsAvG74Du17PhhURk_ZJyqsZB0/edit#gid=2100197981">Kontrak 2023</a></h5>
-    <p>Berisi monitoring kontrak Mitra BPS Kota Bengkulu tahun 2023</p>
+    <h5><a class="subjud" href="https://laci.bps.go.id/s/h8LgljvDPA5tOdu">Template KAK</a></h5>
+    <p>Berisi template dokumen KAK untuk keperluan pencairan administrasi keuangan</p>
     </div>
     </div>
     </div>
@@ -332,49 +338,13 @@ h1{
     <img src="tim kerja.png" width="60px" alt="">
     </div>
     <div class="cat-cap">
-    <h5><a class="subjud" href="https://docs.google.com/spreadsheets/d/1PnRdiTuMpMXE6LkNhBivxTHnl6KckVqt/edit?usp=share_link&ouid=102423170626060549487&rtpof=true&sd=true">Susunan Tim Kerja</a></h5>
-    <p>Berisi excel susunan tim kerja BPS Kota Bengkulu tahun 2023</p>
+    <h5><a class="subjud" href="https://laci.bps.go.id/s/h8LgljvDPA5tOdu">SK KPA</a></h5>
+    <p>Berisi arsip Surat Keputusan KPA BPS Kota Bengkulu tahun 2023</p>
     </div>
     </div>
     </div>
     </div>
     </div>
-    <div class="row" id="row4">
-      <div class="col-lg-4 col-md-6 col-sm-6">
-      <div class="single-cat text-center mb-50">
-      <div class="cat-icon">
-      <img src="agenda.png"width="80px" alt="">
-      </div>
-      <div class="cat-cap">
-      <h5><a class="subjud" href="https://docs.google.com/spreadsheets/d/1EStN9cjqzHLbwtpVvmy3KRRi79yhlxGN/edit?usp=share_link&ouid=102423170626060549487&rtpof=true&sd=true">Agenda Surat</a></h5>
-      <p>Berisi agenda surat BPS Kota Bengkulu tahun 2023.</p>
-      </div>
-      </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6">
-      <div class="single-cat text-center mb-50">
-      <div class="cat-icon">
-      <img src="Arsip.png"width="85px" alt="">
-      </div>
-      <div class="cat-cap">
-      <h5><a class="subjud" href="arsip.html">Arsip dan Dokumen</a></h5>
-      <p>Berisi arsip dan template dokumen administrasi BPS Kota Bengkulu tahun 2023</p>
-      </div>
-      </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6">
-      <div class="single-cat text-center mb-50">
-      <div class="cat-icon">
-      <img src="Pedoman Administrasi Keuangan.png" width="65px" alt="">
-      </div>
-      <div class="cat-cap">
-      <h5><a class="subjud" href="https://laci.bps.go.id/s/ZLnTiglgrWFynWw">Pedoman Administrasi Keuangan</a></h5>
-      <p>Berisi file Pedoman Administrasi Keuangan 2022</p>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
 </main>
 <footer class="text-muted py-3 bg-light">
   <div class="container">
